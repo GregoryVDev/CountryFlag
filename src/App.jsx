@@ -1,5 +1,10 @@
 import "./App.css";
+import { Home } from "./pages/Home";
 
 export const App = () => {
-  return <h1>Hello React</h1>;
+  return (
+    <div className="app-container">
+      <Home />
+    </div>
+  );
 };
