@@ -1,12 +1,11 @@
 import "./App.css";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
-import { Navigation } from "./components/Navigation";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const App = () => {
   return (
     <div className="app-container">
-      <Navigation />
       <Home />
       <About />
     </div>
