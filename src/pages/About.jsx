@@ -3,6 +3,7 @@ import { Navigation } from "../components/Navigation";
 export const About = () => {
   return (
     <div>
+      <Logo />
       <Navigation />
       <h1>A propos</h1>
       <br />
