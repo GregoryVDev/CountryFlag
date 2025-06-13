@@ -1,4 +1,8 @@
 @font-face {
-  font-family: "font-1";
+  font-family: "JosefinSans-Medium";
   src: url("../assets/fonts/JosefinSans-Medium.ttf");
+}
+
+h1 {
+  font-family: var(--font-1);
 }
