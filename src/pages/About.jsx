@@ -1,4 +1,5 @@
 import { Navigation } from "../components/Navigation";
+import { Logo } from "../components/Logo";
 
 export const About = () => {
   return (
