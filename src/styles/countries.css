@@ -1,4 +1,19 @@
 .countries ul {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 1rem;
+}
+
+.card .infos {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.6); /
+}
+
+.card:hover .infos {
+  opacity: 1;
 }

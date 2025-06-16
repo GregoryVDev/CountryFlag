@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Card } from "./Card";
 
 export const Countries = () => {
   // setData permet de modifier les données stockés dans data
@@ -21,7 +22,7 @@ export const Countries = () => {
         {/* Permet d'afficher chaque pays comme un foreach */}
         {data.map((country, index) => (
           // Mettre le nom de chaque pays
-          <li key={index}>{country.translations?.fra?.common}</li>
+          <Card />
         ))}
       </ul>
     </div>
