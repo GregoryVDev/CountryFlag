@@ -22,7 +22,7 @@ export const Countries = () => {
         {/* Permet d'afficher chaque pays comme un foreach */}
         {data.map((country, index) => (
           // Mettre le nom de chaque pays
-          <Card />
+          <Card key={index} country={country} />
         ))}
       </ul>
     </div>

@@ -1,4 +1,5 @@
-export const Card = () => {
+export const Card = ({ country }) => {
+  console.log(country);
   return (
     <div>
       <li className="card">
