@@ -8,7 +8,7 @@ export const Card = ({ country }) => {
           alt={"Drapeau " + country.translations.fra.common}
         />
         <div className="infos">
-          <h2>Nom du pays</h2>
+          <h2>{country.translations.fra.common}</h2>
         </div>
       </li>
     </div>
