@@ -9,6 +9,7 @@ export const Card = ({ country }) => {
         />
         <div className="infos">
           <h2>{country.translations.fra.common}</h2>
+          <h4>{country.capital}</h4>
         </div>
       </li>
     </div>
