@@ -3,7 +3,12 @@ import { useEffect } from "react";
 
 export const Countries = () => {
   // Faire un useEffect pour récupérer les données dans un API
-  useEffect(() => {}, []);
+  useEffect(
+    () => {},
+    axios
+      .get("https://restcountries.com/v3.1/all?fields=name,capital,currencies")
+      .then((res) => console.log(res))
+  );
 
   return (
     <div className="countries">
