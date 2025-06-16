@@ -2,11 +2,7 @@ export const Logo = () => {
   return (
     <div className="logo">
       {/* Les images importées depuis la balise IMG sont accessible dans "public" */}
-      <img
-        src="./logo192.png
-    "
-        alt="Logo react"
-      />
+      <img src="" alt="Logo react" />
       <h3>React World</h3>
     </div>
   );
