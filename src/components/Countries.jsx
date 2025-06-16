@@ -1,6 +1,6 @@
 export const Countries = () => {
   return (
-    <div>
+    <div className="countries">
       <h1>COUNTRIES</h1>
     </div>
   );
