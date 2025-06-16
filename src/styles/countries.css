@@ -11,7 +11,8 @@
 .card .infos {
   opacity: 0;
   transition: opacity 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.6); /
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
 }
 
 .card:hover .infos {
