@@ -6,6 +6,7 @@ export const Countries = () => {
   // setData permet de modifier les données stockés dans data
   const [data, setData] = useState([]);
   const [rangeValue, setRangeValue] = useState(36);
+  const radios = ["Africa", "America", "Asia", "Europe", "Oceania"];
 
   // Faire un useEffect pour récupérer les données dans un API
   useEffect(() => {
