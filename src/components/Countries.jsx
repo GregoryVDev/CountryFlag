@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { Card } from "./Card";
 
 export const Countries = () => {
@@ -23,7 +22,7 @@ export const Countries = () => {
       <h1>COUNTRIES</h1>
       <ul>
         {/* Permet d'afficher chaque pays comme un foreach */}
-        {data.map((country, index) => (
+        {data.slice(0, 15).map((country, index) => (
           // Mettre le nom de chaque pays
           <Card key={index} country={country} />
         ))}
