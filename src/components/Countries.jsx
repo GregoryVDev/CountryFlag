@@ -24,7 +24,7 @@ export const Countries = () => {
           min="1"
           max="250"
           defaultValue={rangeValue}
-          onChange={(e) => console.log(e)} // Fonction déclenchée quand on bouge le slider
+          onChange={(e) => setRangeValue(e.target.value)} // Fonction déclenchée quand on bouge le slider
         />
       </ul>
       <h1>COUNTRIES</h1>
