@@ -5,6 +5,8 @@ import { Card } from "./Card";
 export const Countries = () => {
   // setData permet de modifier les données stockés dans data
   const [data, setData] = useState([]);
+  const [rangeValue, setRangeValue] = useState(36);
+
   // Faire un useEffect pour récupérer les données dans un API
   useEffect(() => {
     axios
@@ -22,7 +24,7 @@ export const Countries = () => {
       <h1>COUNTRIES</h1>
       <ul>
         {/* Permet d'afficher chaque pays comme un foreach */}
-        {data.slice(0, 15).map((country, index) => (
+        {data.slice(0, rangeValue).map((country, index) => (
           // Mettre le nom de chaque pays
           <Card key={index} country={country} />
         ))}
