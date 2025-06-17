@@ -17,6 +17,9 @@ export const Countries = () => {
 
   return (
     <div className="countries">
+      <ul className="radio-container">
+        <input type="range" min="1" max="250" />
+      </ul>
       <h1>COUNTRIES</h1>
       <ul>
         {/* Permet d'afficher chaque pays comme un foreach */}
