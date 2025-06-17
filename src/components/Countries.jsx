@@ -19,7 +19,13 @@ export const Countries = () => {
   return (
     <div className="countries">
       <ul className="radio-container">
-        <input type="range" min="1" max="250" />
+        <input
+          type="range"
+          min="1"
+          max="250"
+          defaultValue={rangeValue}
+          onChange={(e) => console.log(e)} // Fonction déclenchée quand on bouge le slider
+        />
       </ul>
       <h1>COUNTRIES</h1>
       <ul>
