@@ -55,3 +55,8 @@
 .card:hover .infos {
   opacity: 1;
 }
+
+.infos {
+  display: flex;
+  flex-direction: column;
+}
