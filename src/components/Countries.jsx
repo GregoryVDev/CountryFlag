@@ -43,7 +43,9 @@ export const Countries = () => {
       </ul>
       {selectedRadio && (
         <div className="container-button">
-          <button id="deletedSearch">Annuler la recherche</button>
+          <button id="deletedSearch" onClick={() => setSelectedRadio("")}>
+            Annuler la recherche
+          </button>
         </div>
       )}
       <ul>
