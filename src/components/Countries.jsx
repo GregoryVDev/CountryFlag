@@ -29,8 +29,8 @@ export const Countries = () => {
         />
         {radios.map((continent) => (
           <li>
-            <input type="radio" id="afrique" />
-            <label htmlFor="afrique">{continent}</label>
+            <input type="radio" id={continent} />
+            <label htmlFor={continent}>{continent}</label>
           </li>
         ))}
       </ul>
