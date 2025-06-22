@@ -41,7 +41,6 @@ export const Countries = () => {
           </li>
         ))}
       </ul>
-      <h1>COUNTRIES</h1>
       <ul>
         {data
           // Filtrer les pays selon le continent sélectionné dans le bouton radio (le 0 = africa)
