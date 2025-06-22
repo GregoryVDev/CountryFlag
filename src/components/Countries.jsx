@@ -43,11 +43,15 @@ export const Countries = () => {
       </ul>
       <h1>COUNTRIES</h1>
       <ul>
-        {/* Permet d'afficher chaque pays comme un foreach */}
-        {data.slice(0, rangeValue).map((country, index) => (
-          // Mettre le nom de chaque pays
-          <Card key={index} country={country} />
-        ))}
+        {data
+          .filter((country) => null)
+          // Permet de limiter le nombre de pays affichés en fonction de la valeur du slide (rangeValue) qui est de 36
+          .slice(0, rangeValue)
+          /* Permet d'afficher chaque pays comme un foreach */
+          .map((country, index) => (
+            // Mettre le nom de chaque pays
+            <Card key={index} country={country} />
+          ))}
       </ul>
     </div>
   );
