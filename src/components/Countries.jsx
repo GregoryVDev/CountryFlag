@@ -35,6 +35,8 @@ export const Countries = () => {
               type="radio"
               id={continent}
               name="continentRadio"
+              // Est-ce que continent est égale à selectedRadio (si oui = true, si non = false). Si c'est renvoyé false, alors le bouton "annuler la recherche" est retiré
+              checked={continent === selectedRadio}
               onChange={(e) => setSelectedRadio(e.target.id)}
             />
             <label htmlFor={continent}>{continent}</label>
