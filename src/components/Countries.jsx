@@ -29,7 +29,8 @@ export const Countries = () => {
         />
         {radios.map((continent) => (
           <li>
-            <input type="radio" id={continent} />
+            {/* Ajouter un name pour pouvoir lier tous les checkbox */}
+            <input type="radio" id={continent} name="continentRadio" />
             <label htmlFor={continent}>{continent}</label>
           </li>
         ))}
