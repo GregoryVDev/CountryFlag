@@ -13,7 +13,7 @@ export const Countries = () => {
   useEffect(() => {
     axios
       .get(
-        "https://restcountries.com/v3.1/all?fields=name,capital,currencies,translations,flags,population"
+        "https://restcountries.com/v3.1/all?fields=name,capital,currencies,translations,flags,population,continents"
       )
       .then((res) => setData(res.data));
   }, []);
