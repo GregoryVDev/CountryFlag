@@ -34,6 +34,11 @@ h1 {
 }
 
 #deletedSearch {
-  border: 3px solid;
+  border: 3px solid #59c8e5;
   text-align: center;
+}
+
+#deletedSearch:hover {
+  background: #59c8e5;
+  border: 3px solid #1e1e1e;
 }
