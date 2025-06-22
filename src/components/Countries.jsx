@@ -41,6 +41,11 @@ export const Countries = () => {
           </li>
         ))}
       </ul>
+      {selectedRadio && (
+        <div className="container-button">
+          <button id="deletedSearch">Annuler la recherche</button>
+        </div>
+      )}
       <ul>
         {data
           // Filtrer les pays selon le continent sélectionné dans le bouton radio (le 0 = africa)
