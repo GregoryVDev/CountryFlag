@@ -44,7 +44,7 @@ export const Countries = () => {
       <h1>COUNTRIES</h1>
       <ul>
         {data
-          // Filtrer les pays selon le continent sélectionné dans le bouton radio
+          // Filtrer les pays selon le continent sélectionné dans le bouton radio (le 0 = africa)
           .filter((country) => country.continents[0].includes(selectedRadio))
           // Permet de limiter le nombre de pays affichés en fonction de la valeur du slide (rangeValue) qui est de 36
           .slice(0, rangeValue)
