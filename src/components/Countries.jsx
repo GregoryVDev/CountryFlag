@@ -27,8 +27,12 @@ export const Countries = () => {
           defaultValue={rangeValue}
           onChange={(e) => setRangeValue(e.target.value)} // Fonction déclenchée quand on bouge le slider
         />
-        <input type="radio" id="afrique" />
-        <label htmlFor="afrique"></label>
+        {radios.map((continent) => (
+          <li>
+            <input type="radio" id="afrique" />
+            <label htmlFor="afrique"></label>
+          </li>
+        ))}
       </ul>
       <h1>COUNTRIES</h1>
       <ul>
