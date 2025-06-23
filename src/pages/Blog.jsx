@@ -4,11 +4,13 @@ import { useState } from "react";
 
 export const Blog = () => {
   const [content, setContent] = useState("");
+  const [error, setError] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (content.length < 140) {
-      alert("Noo");
+      setError(true);
     }
   };
   return (
@@ -24,6 +26,7 @@ export const Blog = () => {
           // Permet d'écrire une valeur qui est stocké dans setContent
           onChangeCapture={(e) => setContent(e.target.value)}
         ></textarea>
+        {error && <p>Veuillez écrire un minimum de 240 caractères</p>}
         <input type="submit" value="Envoyer" />
       </form>
       <ul></ul>
