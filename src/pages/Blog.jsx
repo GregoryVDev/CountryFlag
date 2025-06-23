@@ -6,6 +6,10 @@ export const Blog = () => {
   const [content, setContent] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (content.length < 140) {
+      alert("Noo");
+    }
   };
   return (
     <div className="blog-container">
