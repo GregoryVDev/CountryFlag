@@ -10,6 +10,7 @@ export const Blog = () => {
 
       <form>
         <input type="text" placeholder="Nom" />
+        <textarea placeholder="Message"></textarea>
       </form>
     </div>
   );
