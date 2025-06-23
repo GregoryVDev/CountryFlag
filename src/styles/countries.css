@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 40;
   list-style: none;
   gap: 1rem;
 }
