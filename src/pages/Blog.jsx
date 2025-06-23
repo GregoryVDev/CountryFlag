@@ -1,7 +1,9 @@
 import { Navigation } from "../components/Navigation";
 import { Logo } from "../components/Logo";
+import { useState } from "react";
 
 export const Blog = () => {
+  const [content, setContent] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -13,7 +15,11 @@ export const Blog = () => {
 
       <form onSubmit={(e) => handleSubmit(e)}>
         <input type="text" placeholder="Nom" />
-        <textarea placeholder="Message"></textarea>
+        <textarea
+          placeholder="Message"
+          // Permet d'écrire une valeur qui est stocké dans setContent
+          onChangeCapture={(e) => setContent(e.target.value)}
+        ></textarea>
         <input type="submit" value="Envoyer" />
       </form>
       <ul></ul>
