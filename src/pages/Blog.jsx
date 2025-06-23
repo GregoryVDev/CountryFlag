@@ -7,6 +7,10 @@ export const Blog = () => {
       <Logo />
       <Navigation />
       <h1>Blog</h1>
+
+      <form>
+        <input type="text" placeholder="Nom" />
+      </form>
     </div>
   );
 };
