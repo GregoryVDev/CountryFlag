@@ -15,7 +15,7 @@ export const App = () => {
         <Route path="/about" element={<About />} />
         {/* path="*" fonctionne si jamais l'url ne correspond à rien de déclaré au dessus */}
         <Route path="*" element={<Home />} />
-        <Route path="*" element={<Blog />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

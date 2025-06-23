@@ -34,9 +34,4 @@
     transition: 0.4s;
     background: red;
   }
-
-  &:hover {
-    background: yellow;
-    color: white;
-  }
 }
