@@ -11,6 +11,8 @@ export const Blog = () => {
 
     if (content.length < 140) {
       setError(true);
+    } else {
+      setError(false);
     }
   };
   return (
