@@ -28,9 +28,14 @@
     color: red;
   }
   input[type="submit"] {
-    width: 200px;
+    width: 150px;
     margin-left: auto;
     cursor: pointer;
     transition: 0.4s;
+    background: #61dafb;
+    border: none;
+  }
+  input[type="submit"]:hover {
+    opacity: 0.8;
   }
 }
