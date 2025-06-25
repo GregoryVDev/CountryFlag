@@ -24,6 +24,7 @@ export const Blog = () => {
       <form onSubmit={(e) => handleSubmit(e)}>
         <input type="text" placeholder="Nom" />
         <textarea
+          style={{ border: error ? "1px solid red" : "1px solid #61dafb" }}
           placeholder="Message"
           // Permet d'écrire une valeur qui est stocké dans setContent
           onChangeCapture={(e) => setContent(e.target.value)}
