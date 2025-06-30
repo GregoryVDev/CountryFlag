@@ -1,6 +1,6 @@
 import { Navigation } from "../components/Navigation";
 import { Logo } from "../components/Logo";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 export const Blog = () => {
