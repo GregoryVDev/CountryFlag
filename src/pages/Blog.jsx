@@ -15,9 +15,7 @@ export const Blog = () => {
       .then((res) => console.log(res));
   };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  useEffect(() => getData(), []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
