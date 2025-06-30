@@ -7,14 +7,15 @@ export const Blog = () => {
   const [content, setContent] = useState("");
   const [error, setError] = useState(false);
 
+  const getData = () => {
+    axios
+      // Permet de faire une requête HTTP et permet de chercher les données à cette adresse
+      .get("http://localhost:5173/articles")
+      // Afficher le resultat dans la console
+      .then((res) => console.log(res));
+  };
+
   useEffect(() => {
-    const getData = () => {
-      axios
-        // Permet de faire une requête HTTP et permet de chercher les données à cette adresse
-        .get("http://localhost:5173/articles")
-        // Afficher le resultat dans la console
-        .then((res) => console.log(res));
-    };
     getData();
   }, []);
 
