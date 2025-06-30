@@ -14,9 +14,8 @@ export const Blog = () => {
         .get("http://localhost:5173/articles")
         // Afficher le resultat dans la console
         .then((res) => console.log(res));
-
-      getData();
     };
+    getData();
   }, []);
 
   const handleSubmit = (e) => {
