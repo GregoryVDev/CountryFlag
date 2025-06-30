@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 export const Blog = () => {
+  const [blogData, setBlogData] = useState([]);
   const [content, setContent] = useState("");
   const [error, setError] = useState(false);
 
