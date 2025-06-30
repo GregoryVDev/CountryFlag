@@ -13,7 +13,7 @@ export const Blog = () => {
       // Permet de faire une requête HTTP et permet de chercher les données à cette adresse
       .get("http://localhost:5173/articles")
       // Afficher le resultat dans la console
-      .then((res) => console.log(res));
+      .then((res) => setBlogData(res.data));
   };
 
   useEffect(() => getData(), []);
