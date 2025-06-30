@@ -44,11 +44,7 @@ export const Blog = () => {
         {error && <p>Veuillez écrire un minimum de 240 caractères</p>}
         <input type="submit" value="Envoyer" />
       </form>
-      <ul>
-        {blogData.map((article) => (
-          
-        ))}
-      </ul>
+      <ul></ul>
     </div>
   );
 };
