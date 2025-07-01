@@ -11,7 +11,7 @@ export const Blog = () => {
   const getData = () => {
     axios
       // Permet de faire une requête HTTP et permet de chercher les données à cette adresse
-      .get("http://localhost:5173/articles")
+      .get("http://localhost:3004/articles")
       // Afficher le resultat dans la console
       .then((res) => setBlogData(res.data));
   };
