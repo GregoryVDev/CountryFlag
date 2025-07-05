@@ -45,7 +45,7 @@ export const Blog = () => {
         {error && <p>Veuillez écrire un minimum de 240 caractères</p>}
         <input type="submit" value="Envoyer" />
       </form>
-      <ul>
+      <ul className="content">
         {blogData.map((article) => (
           <Article />
         ))}
@@ -53,3 +53,5 @@ export const Blog = () => {
     </div>
   );
 };
+
+// 37:42 : Mettre du CSS sur l'ul de blog
