@@ -6,6 +6,7 @@ import axios from "axios";
 
 export const Blog = () => {
   const [blogData, setBlogData] = useState([]);
+  const [author, setAuthor] = useState([]);
   const [content, setContent] = useState("");
   const [error, setError] = useState(false);
 
@@ -40,7 +41,11 @@ export const Blog = () => {
       <h1>Blog</h1>
 
       <form onSubmit={(e) => handleSubmit(e)}>
-        <input type="text" placeholder="Nom" />
+        <input
+          type="text"
+          placeholder="Nom"
+          onChange={(e) => setAuthor(e.target.value)}
+        />
         <textarea
           style={{ border: error ? "1px solid red" : "1px solid #61dafb" }}
           placeholder="Message"
