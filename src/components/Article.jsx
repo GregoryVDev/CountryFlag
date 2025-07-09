@@ -15,6 +15,11 @@ export const Article = ({ article }) => {
     });
     return newDate;
   };
+
+  const handleEdit = () => {
+    setIsEditing(false);
+  };
+
   return (
     <div>
       <div className="article">
@@ -30,7 +35,7 @@ export const Article = ({ article }) => {
 
         <div className="btn-container">
           {isEditing ? (
-            <button onClick={() => setIsEditing(false)}>Valider</button>
+            <button onClick={() => handleEdit()}>Valider</button>
           ) : (
             <button onClick={() => setIsEditing(true)}>Edit</button>
           )}
