@@ -32,7 +32,10 @@ export const Article = ({ article }) => {
 
   return (
     <div>
-      <div className="article">
+      <div
+        className="article"
+        style={{ background: isEditing ? "#f3feff" : "#f5f5f5" }}
+      >
         <div className="card-header">
           <h3>{article.author}</h3>
           <em>Posté le {dateFormater(article.date)}</em>
@@ -40,6 +43,7 @@ export const Article = ({ article }) => {
         {isEditing ? (
           <textarea
             defaultValue={article.content}
+            autoFocus
             onChange={(e) => setEditContent(e.target.value)}
           ></textarea>
         ) : (
