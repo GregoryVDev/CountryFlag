@@ -30,6 +30,10 @@ export const Article = ({ article }) => {
     });
   };
 
+  const handleDelete = () => {
+    console.log("supprimé !");
+  };
+
   return (
     <div>
       <div
@@ -56,7 +60,17 @@ export const Article = ({ article }) => {
           ) : (
             <button onClick={() => setIsEditing(true)}>Edit</button>
           )}
-          <button>Supprimer</button>
+          <button
+            onClick={() => {
+              if (
+                window.confirm("Voulez-vous vraiment supprimer cet article ?")
+              ) {
+                handleDelete();
+              }
+            }}
+          >
+            Supprimer
+          </button>
         </div>
       </div>
     </div>
