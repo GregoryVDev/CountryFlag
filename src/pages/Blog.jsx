@@ -47,7 +47,7 @@ export const Blog = () => {
       </form>
       <ul className="content">
         {blogData.map((article) => (
-          <Article />
+          <Article key={article.id} />
         ))}
       </ul>
     </div>
