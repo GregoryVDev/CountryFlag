@@ -46,9 +46,12 @@ export const Blog = () => {
         <input type="submit" value="Envoyer" />
       </form>
       <ul className="content">
-        {blogData.map((article) => (
-          <Article key={article.id} article={article} />
-        ))}
+        {blogData
+          // Trier par l'ordre plus récent au plus vieux uniquement grace à la date
+          .sort((a, b) => b.date - a.date)
+          .map((article) => (
+            <Article key={article.id} article={article} />
+          ))}
       </ul>
     </div>
   );
