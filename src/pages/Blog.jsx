@@ -25,6 +25,11 @@ export const Blog = () => {
     if (content.length < 140) {
       setError(true);
     } else {
+      axios.post("http://localhost:3004/articles", {
+        author: "TEST",
+        content,
+        date: Date.now(),
+      });
       setError(false);
     }
   };
