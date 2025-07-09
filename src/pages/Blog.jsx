@@ -32,6 +32,8 @@ export const Blog = () => {
         date: Date.now(),
       });
       setError(false);
+      setAuthor("");
+      setContent("");
     }
   };
   return (
@@ -45,12 +47,14 @@ export const Blog = () => {
           type="text"
           placeholder="Nom"
           onChange={(e) => setAuthor(e.target.value)}
+          value={author}
         />
         <textarea
           style={{ border: error ? "1px solid red" : "1px solid #61dafb" }}
           placeholder="Message"
           // Permet d'écrire une valeur qui est stocké dans setContent
           onChangeCapture={(e) => setContent(e.target.value)}
+          value={content}
         ></textarea>
         {error && <p>Veuillez écrire un minimum de 240 caractères</p>}
         <input type="submit" value="Envoyer" />
