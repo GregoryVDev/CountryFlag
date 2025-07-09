@@ -27,7 +27,7 @@ export const Blog = () => {
       setError(true);
     } else {
       axios.post("http://localhost:3004/articles", {
-        author: "TEST",
+        author,
         content,
         date: Date.now(),
       });
