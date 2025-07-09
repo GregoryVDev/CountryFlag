@@ -1,8 +1,10 @@
-export const Article = () => {
+export const Article = ({ article }) => {
   return (
     <div>
       <div className="article">
-        <h3>ARTICLE</h3>
+        <div className="card-header">
+          <h3>ARTICLE</h3>
+        </div>
       </div>
     </div>
   );
