@@ -17,6 +17,14 @@ export const Article = ({ article }) => {
   };
 
   const handleEdit = () => {
+    const data = {
+      author: article.author,
+      content: editContent ? editContent : article.content,
+      date: article.date,
+      updatedDate: Date.now(),
+    };
+
+    axios.put("http://localhost:3004/articles/" + article.id);
     setIsEditing(false);
   };
 
@@ -28,7 +36,10 @@ export const Article = ({ article }) => {
           <em>Posté le {dateFormater(article.date)}</em>
         </div>
         {isEditing ? (
-          <textarea defaultValue={article.content}></textarea>
+          <textarea
+            defaultValue={article.content}
+            onChange={(e) => setEditContent(e.target.value)}
+          ></textarea>
         ) : (
           <p>{article.content}</p>
         )}
