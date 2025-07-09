@@ -21,7 +21,11 @@ export const Article = ({ article }) => {
           <h3>{article.author}</h3>
           <em>Posté le {dateFormater(article.date)}</em>
         </div>
-        {isEditing ? <textarea></textarea> : <p>{article.content}</p>}
+        {isEditing ? (
+          <textarea defaultValue={article.content}></textarea>
+        ) : (
+          <p>{article.content}</p>
+        )}
 
         <div className="btn-container">
           <button onClick={() => setIsEditing(true)}>Edit</button>
