@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export const Article = ({ article }) => {
   const [isEditing, setIsEditing] = useState(false);
+  const [editContent, setEditContent] = useState("");
 
   const dateFormater = (date) => {
     let newDate = new Date(date).toLocaleDateString("fr-FR", {
@@ -28,7 +29,11 @@ export const Article = ({ article }) => {
         )}
 
         <div className="btn-container">
-          <button onClick={() => setIsEditing(true)}>Edit</button>
+          {isEditing ? (
+            <button onClick={() => setIsEditing(false)}>Valider</button>
+          ) : (
+            <button onClick={() => setIsEditing(true)}>Edit</button>
+          )}
           <button>Supprimer</button>
         </div>
       </div>
