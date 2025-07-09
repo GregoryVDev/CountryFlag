@@ -43,7 +43,7 @@ export const Article = ({ article }) => {
             onChange={(e) => setEditContent(e.target.value)}
           ></textarea>
         ) : (
-          <p>{article.content}</p>
+          <p>{editContent ? editContent : article.content}</p>
         )}
 
         <div className="btn-container">
