@@ -3,7 +3,7 @@ export const Article = ({ article }) => {
     <div>
       <div className="article">
         <div className="card-header">
-          <h3>ARTICLE</h3>
+          <h3>{article.author}</h3>
         </div>
       </div>
     </div>
