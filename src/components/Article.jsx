@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export const Article = ({ article }) => {
+  const [isEditing, setIsEditing] = useState(false);
+
   const dateFormater = (date) => {
     let newDate = new Date(date).toLocaleDateString("fr-FR", {
       year: "numeric",
@@ -17,9 +21,10 @@ export const Article = ({ article }) => {
           <h3>{article.author}</h3>
           <em>Posté le {dateFormater(article.date)}</em>
         </div>
-        <p>{article.content}</p>
+        {isEditing ? <textarea></textarea> : <p>{article.content}</p>}
+
         <div className="btn-container">
-          <button>Edit</button>
+          <button onClick={() => setIsEditing(true)}>Edit</button>
           <button>Supprimer</button>
         </div>
       </div>
