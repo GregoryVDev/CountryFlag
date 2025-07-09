@@ -7,6 +7,10 @@ export const Article = ({ article }) => {
           <em>Posté le {article.date}</em>
         </div>
         <p>{article.content}</p>
+        <div className="btn-container">
+          <button>Edit</button>
+          <button>Supprimer</button>
+        </div>
       </div>
     </div>
   );
