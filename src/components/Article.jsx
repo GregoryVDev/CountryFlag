@@ -24,8 +24,9 @@ export const Article = ({ article }) => {
       updatedDate: Date.now(),
     };
 
-    axios.put("http://localhost:3004/articles/" + article.id, data);
-    setIsEditing(false);
+    axios.put("http://localhost:3004/articles/" + article.id, data).then(() => {
+      setIsEditing(false);
+    });
   };
 
   return (
