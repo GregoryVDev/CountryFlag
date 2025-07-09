@@ -31,7 +31,7 @@ export const Article = ({ article }) => {
   };
 
   const handleDelete = () => {
-    console.log("supprimé !");
+    axios.delete("http://localhost:3004/articles/" + article.id);
   };
 
   return (
