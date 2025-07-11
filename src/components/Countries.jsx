@@ -9,7 +9,7 @@ export const Countries = () => {
   const [selectedRadio, setSelectedRadio] = useState("");
   const radios = ["Africa", "America", "Asia", "Europe", "Oceania"];
 
-  // Faire un useEffect pour récupérer les données dans un API
+  // Faire un useEffect pour récupérer les données dans une API
   useEffect(() => {
     axios
       .get(
